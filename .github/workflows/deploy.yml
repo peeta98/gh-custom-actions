@@ -71,3 +71,5 @@ jobs:
           bucket: gha-custom-action-peeta
           bucket-region: eu-north-1
           dist-folder: ./dist
+      - name: Output website URL
+        run: echo "Website URL:${{ steps.deploy.outputs.website-url }}"
